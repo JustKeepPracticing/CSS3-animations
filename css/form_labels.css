@@ -1,0 +1,62 @@
+body {
+    padding: 100px 200px;
+}
+
+input {
+    padding: 15px 40px;
+    background: none;
+    color: purple;
+    border: 2px solid purple;
+    font-size: 18px;
+    display: inline-block;
+}
+
+input:focus,
+input:active {
+    outline: none;
+}
+
+input[type="text"],
+input[type="email"]{
+    border: none;
+    border-bottom: 2px solid purple;
+}
+
+input[type="submit"]:active {
+    color: #fff;
+    background-color: purple;
+}
+
+.input-group {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+    top: 0;
+}
+
+.input-group input {
+    padding: 15px 0;
+}
+
+.input-group label {
+    font-family: Georgia, Cambria, "Times New Roman", Times, Serif;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-style: italic;
+    font-size: 18px;
+    color: #999;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+input:focus + label,
+input.has-value + label {
+    top: -10px;
+    font-size: 12px;
+    color: #aaa;
+}
+

@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loaders span {
+    display: block;
+    padding: 20px;
+    margin: 15px;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+
+.one {
+    animation: scale 2s linear infinite;
+}
+
+.two {
+    animation: scale 2s linear infinite 900ms;
+}
+
+.three {
+    animation: scale 2s linear infinite 1500ms;
+}
+
+.a {
+    animation: scale 2s linear infinite 300ms;
+}
+
+.b {
+    animation: scale 2s linear infinite 1800ms;
+}
+
+
+.c {
+    animation: scale 2s linear infinite 600ms;
+}
+
+.d {
+    animation: scale 2s linear infinite 1200ms;
+}
+
+.e {
+    animation: scale 2s linear infinite 2100ms;
+}
+
+
+.text-span {
+    color: purple;
+    font-size: 24px;
+    font-style: italic;
+    animation: rotate 13s ease-in-out infinite;
+}
+
+
+.one, .three, .c, .e {
+    background-color: #33aacc;
+}
+
+.two, .a, .b, .d {
+    background-color: #4d407c;
+}
+
+.loaders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(0.6);
+        box-shadow: 0 0 5px lightgrey;
+    }
+
+    40%, 65% {
+        transform: scale(0.3);
+        box-shadow: 0 0 10px lightgrey;
+    }
+
+    75%, 85% {
+        transform: scale(0.1);
+        box-shadow: 0 0 15px lightgrey;
+    }
+
+}
+
+@keyframes rotate {
+    0%, 100% {
+        transform: rotate(0deg);
+        color: #4d407c;
+    }
+
+    30%, 50% {
+        transform: rotate(360deg);
+        color: lightblue;
+    }
+
+    80%, 90% {
+        transform: rotate(-360deg)
+    }
+
+
+}
